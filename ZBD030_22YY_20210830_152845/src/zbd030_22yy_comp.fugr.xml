@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Funktionsgruppe Kwoky 23.08.2021</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZBD030_22YY_COMPTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZBD030_22YY_COMP</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_BD030_22YY_PERC</FUNCNAME>
+     <SHORT_TEXT>Funktionsbaustein Kwoky 24.08.2021</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IF_INT1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IF_INT2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EF_ERGEBNIS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZBD030_PERC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>PROZ_V_NULL</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IF_INT1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IF_INT2</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EF_ERGEBNIS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Prozentsatz</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PROZ_V_NULL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Die Teilung durch Null ist nicht erlaubt</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
